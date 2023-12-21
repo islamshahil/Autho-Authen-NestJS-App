@@ -43,7 +43,8 @@ $ npm run start
 
 ## System Design & Doc
 
-Import the Postman Collection present in the Repository.
+Import the Postman Collection present in the Repository to use the System.
+
 Following are the features:
 
 - **Signup** : Input Data for User Signup.
