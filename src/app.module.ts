@@ -9,6 +9,7 @@ import { UserSchema } from './auth/schemas/user.schema';
 import { JwtService } from '@nestjs/jwt';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { LoggerMiddleware } from './logger/logger.middleware';
+import { LoggingInterceptor } from './logging/logging.interceptor';
 
 @Module({
   imports: [
@@ -25,7 +26,7 @@ import { LoggerMiddleware } from './logger/logger.middleware';
     AuthModule
   ],
   controllers: [AppController, HelloController],
-  providers: [AppService, JwtService],
+  providers: [AppService, JwtService, LoggingInterceptor],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {

@@ -1,9 +1,11 @@
-import { Controller, Get, Put, Delete, Param, Body, UseGuards } from '@nestjs/common';
+import { Controller, Get, Put, Delete, Param, Body, UseGuards, UseInterceptors } from '@nestjs/common';
 import { AppService } from './app.service';
 import { User } from './auth/schemas/user.schema';
 import { AuthGuard } from '@nestjs/passport';
+import { LoggingInterceptor } from './logging/logging.interceptor';
 
 @Controller()
+@UseInterceptors(LoggingInterceptor) 
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
