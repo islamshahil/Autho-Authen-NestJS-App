@@ -47,11 +47,12 @@ Import the Postman Collection present in the Repository.
 Following are the features:
 
 - **Signup** : Input Data for User Signup.
-- **Login** : Use email and password to Login. (*If User is Login Once until Logout, wont be able to login Again.)
+- **Login** : Use email and password to Login. (*If User is LoggedIn once until Logout, wont be able to login again.)
 - **Logout** : Use email and password to Logout.
 - **getallUsers** : Get all the Users in Database.
-- **getUser** : Takes usedid and returns user Data.
-- **updatePassword** : Takes userid in url, password in body and jwt token as Bearer as Authorization which you will get on login and updates the password and logs out if loggedin.
-- **deleteUser** : Takes userid in url, password in body and jwt token as Bearer as Authorization which you will get on login and deletes user.
+- **getUser** : Takes userid and returns user Data.
+- **updatePassword** : Takes userid in url, password in body and jwt token as Bearer - Authorization which you will get on successful login and updates the password and logs out if loggedIn.
+- **deleteUser** : Takes userid in url, password in body and jwt token as Bearer - Authorization which you will get on login and deletes user.
 - **Brownie Features** : API Throttling and Rate Limiter, Middleware, Interceptor.
+- **Deployment** : Github CI/CD.
 
