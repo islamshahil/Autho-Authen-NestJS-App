@@ -21,7 +21,10 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Create Release
+    - name: Check for changes
+      run: git diff --exit-code || (git add . && git commit -m "Auto-commit changes [skip ci]")
+
+    - name: Bump version and create release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
