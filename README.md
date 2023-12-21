@@ -41,7 +41,7 @@ $ npm install
 $ npm run start
 ```
 
-## Working Design
+## System Design & Doc
 
 Import the Postman Collection present in the Repository.
 Following are the features:
@@ -53,4 +53,5 @@ Following are the features:
 - **getUser** : Takes usedid and returns user Data.
 - **updatePassword** : Takes userid in url, password in body and jwt token as Bearer as Authorization which you will get on login and updates the password and logs out if loggedin.
 - **deleteUser** : Takes userid in url, password in body and jwt token as Bearer as Authorization which you will get on login and deletes user.
+- **Brownie Features** : API Throttling and Rate Limiter, Middleware, Interceptor.
 
