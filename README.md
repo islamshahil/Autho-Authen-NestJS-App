@@ -23,6 +23,10 @@
 
 ## Description
 
+**Autho-Authen-NestJS-App**
+
+*A simple NestJS application with user authorization and authentication system.*
+
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
@@ -34,40 +38,19 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
 $ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
-## Test
+## Working Design
 
-```bash
-# unit tests
-$ npm run test
+Import the Postman Collection present in the Repository.
+Following are the features:
 
-# e2e tests
-$ npm run test:e2e
+- **Signup** : Input Data for User Signup.
+- **Login** : Use email and password to Login. (*If User is Login Once until Logout, wont be able to login Again.)
+- **Logout** : Use email and password to Logout.
+- **getallUsers** : Get all the Users in Database.
+- **getUser** : Takes usedid and returns user Data.
+- **updatePassword** : Takes userid in url, password in body and jwt token as Bearer as Authorization which you will get on login and updates the password and logs out if loggedin.
+- **deleteUser** : Takes userid in url, password in body and jwt token as Bearer as Authorization which you will get on login and deletes user.
 
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
-#
